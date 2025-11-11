@@ -1,0 +1,31 @@
+// Author: William Provost
+// Version: 1.0.0
+// Date: 2025-11-10
+// Fileoverview: This program reads a number of cents and converts it
+// into the number of dollars and cents using integer arithmetic.
+
+package main
+
+import "fmt"
+
+func main() {
+    // constants
+    const CENTS_IN_DOLLAR int = 100
+
+    // variables
+    var totalCents int
+    var dollars int
+    var cents int
+
+    // input
+    fmt.Print("Input the cents please: ")
+    fmt.Scan(&totalCents)
+
+    // process
+    dollars = totalCents / CENTS_IN_DOLLAR
+    cents = totalCents % CENTS_IN_DOLLAR
+
+    // output
+    fmt.Printf("That is %d dollars and %d cents\n", dollars, cents)
+    fmt.Println("Done.")
+}
