@@ -9,7 +9,7 @@
 // Constants
 const CENTS_IN_DOLLAR: number = 100;
 
-// Variables (use const since never reassigned)
+// Process
 const totalCentsAsString: string = prompt("Input the cents please:") || "0";
 const totalCents: number = parseInt(totalCentsAsString);
 const dollars: number = Math.floor(totalCents / CENTS_IN_DOLLAR);
