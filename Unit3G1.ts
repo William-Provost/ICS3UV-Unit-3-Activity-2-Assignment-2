@@ -6,23 +6,23 @@
  * into the number of dollars and cents using integer arithmetic.
  */
 
-// constants
+// Constants
 const CENTS_IN_DOLLAR: number = 100;
 
-// variables
+// Variables
 let totalCentsAsString: string;
 let totalCents: number;
 let dollars: number;
 let cents: number;
 
-// input
+// Input
 totalCentsAsString = prompt("Input the cents please:") || "0";
 totalCents = parseInt(totalCentsAsString);
 
-// process
+// Process
 dollars = Math.floor(totalCents / CENTS_IN_DOLLAR);
 cents = totalCents % CENTS_IN_DOLLAR;
 
-// output
+// Output
 console.log("That is " + dollars + " dollars and " + cents + " cents");
 console.log("\nDone.");
