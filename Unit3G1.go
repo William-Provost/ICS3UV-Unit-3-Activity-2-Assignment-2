@@ -9,23 +9,23 @@ package main
 import "fmt"
 
 func main() {
-    // constants
-    const CENTSINDOLLAR int = 100
+	// constants
+	const CENTSINDOLLAR int = 100
 
-    // variables
-    var totalCents int
-    var dollars int
-    var cents int
+	// variables
+	var totalCents int
+	var dollars int
+	var cents int
 
-    // input
-    fmt.Print("Input the cents please: ")
-    fmt.Scan(&totalCents)
+	// input
+	fmt.Print("Input the cents please: ")
+	fmt.Scan(&totalCents)
 
-    // process
-    dollars = totalCents / CENTSINDOLLAR
-    cents = totalCents % CENTSINDOLLAR
+	// process
+	dollars = totalCents / CENTSINDOLLAR
+	cents = totalCents % CENTSINDOLLAR
 
-    // output
-    fmt.Printf("That is %d dollars and %d cents\n", dollars, cents)
-    fmt.Println("\nDone.")
+	// output
+	fmt.Printf("That is %d dollars and %d cents\n", dollars, cents)
+	fmt.Println("\nDone.")
 }

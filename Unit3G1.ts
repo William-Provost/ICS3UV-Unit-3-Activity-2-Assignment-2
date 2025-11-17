@@ -9,19 +9,11 @@
 // Constants
 const CENTS_IN_DOLLAR: number = 100;
 
-// Variables
-let totalCentsAsString: string;
-let totalCents: number;
-let dollars: number;
-let cents: number;
-
-// Input
-totalCentsAsString = prompt("Input the cents please:") || "0";
-totalCents = parseInt(totalCentsAsString);
-
-// Process
-dollars = Math.floor(totalCents / CENTS_IN_DOLLAR);
-cents = totalCents % CENTS_IN_DOLLAR;
+// Variables (use const since never reassigned)
+const totalCentsAsString: string = prompt("Input the cents please:") || "0";
+const totalCents: number = parseInt(totalCentsAsString);
+const dollars: number = Math.floor(totalCents / CENTS_IN_DOLLAR);
+const cents: number = totalCents % CENTS_IN_DOLLAR;
 
 // Output
 console.log("That is " + dollars + " dollars and " + cents + " cents");
