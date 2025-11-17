@@ -25,4 +25,4 @@ cents = totalCents % CENTS_IN_DOLLAR;
 
 // output
 console.log("That is " + dollars + " dollars and " + cents + " cents");
-console.log("Done.");
+console.log("\nDone.");

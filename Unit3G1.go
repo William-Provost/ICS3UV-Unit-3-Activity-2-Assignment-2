@@ -10,7 +10,7 @@ import "fmt"
 
 func main() {
     // constants
-    const CENTS_IN_DOLLAR int = 100
+    const CENTSINDOLLAR int = 100
 
     // variables
     var totalCents int
@@ -22,10 +22,11 @@ func main() {
     fmt.Scan(&totalCents)
 
     // process
-    dollars = totalCents / CENTS_IN_DOLLAR
-    cents = totalCents % CENTS_IN_DOLLAR
+    dollars = totalCents / CENTSINDOLLAR
+    cents = totalCents % CENTSINDOLLAR
 
     // output
     fmt.Printf("That is %d dollars and %d cents\n", dollars, cents)
-    fmt.Println("Done.")
+    fmt.Println("\nDone.")
 }
+
